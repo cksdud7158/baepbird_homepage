@@ -1,0 +1,55 @@
+#appbar {
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+}
+
+#router {
+    margin-top: 50px;
+}
+
+#title {
+    height: 15px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+
+@media screen and (min-width: 961px) {
+    #appbar {
+        height: 120px;
+        padding: 0 55px;
+        background-color: rgba(255, 255, 255, 0);
+        ;
+    }
+
+    #router {
+        margin-top: 0;
+    }
+
+    #title {
+        height: 30px;
+    }
+}
+
+
+@media all and (min-width:768px) and (max-width:960px) {
+    #appbar {
+        height: 75px;
+    }
+
+    #router {
+        margin-top: 75px;
+    }
+
+    #title {
+        height: 25px;
+    }
+}

@@ -1,0 +1,53 @@
+.container{
+    background-color: red;
+    height: 92vh !important;
+    color: white;
+    font-family: "NanumSquare";
+    font-weight: 600;
+    padding: 0 7%;
+
+}
+.name{
+    padding-top: 5vh;
+    margin-top: 5vh;
+    text-align: center;
+    font-family: "Jalnan";
+}
+.contact{
+    text-align: center;
+    font-family: "Jalnan";
+    font-size: 1.9rem;
+}
+.part1{
+    margin-top: 5vh;
+}
+.item{
+    margin-bottom: 10px;
+}
+.item>p{
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.part3{
+    display: flex;
+    align-items: center;
+    font-size: .6rem;
+}
+.ask{
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+}
+.ask>img{
+    width: 50vw;
+}
+
+.last{
+    text-align: center;
+    margin-top: 10px;
+    font-size: .6rem;
+}
+
+.part11{
+    background-color: #fff;
+}

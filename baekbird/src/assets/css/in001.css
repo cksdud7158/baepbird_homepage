@@ -1,0 +1,12 @@
+
+#text{
+  margin-top: 40px;
+    display: grid;
+    align-content: center;
+    padding-left: 20%;
+    font-size: 1.3rem;
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    color: #373737;
+
+}
