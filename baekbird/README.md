@@ -37,3 +37,9 @@ https://coding-factory.tistory.com/502
 sudo apt-get install git
 sudo apt install git 
 git --version
+
+### Swiper
+https://swiperjs.com/api/#autoplay
+
+### animation.css
+https://animate.style/

@@ -1,6 +1,5 @@
 <template>
-  <div class="fullpage-container">
-    <div class="fullpage-wp" v-fullpage="opts" ref="bs001">
+  <div>
       <div class="page-1 page " id="page1">
         <div>
           <div class="part1">
@@ -27,17 +26,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="page-2 page" id="page2">
-        <div id="page_2_content">
-          <portfolio />
-        </div>
-      </div>
-
-      <div class="page-3 page" id="page3">
-        <ot002 />
-      </div>
     </div>
   </div>
 </template>

@@ -40,14 +40,8 @@
           </div>
           <div class="part3_2">
             <div id="about">
-              <p id="link" @click.prevent="$router.push('/planning')">
-                PLANNING +
-              </p>
-              <p id="link" @click.prevent="$router.push('/branding')">
-                BRANDING +
-              </p>
-              <p id="link" @click.prevent="$router.push('/advertising')">
-                ADVERTISING +
+              <p id="link" @click.prevent="$router.push('/work')">
+                WORK +
               </p>
             </div>
             <div id="content">

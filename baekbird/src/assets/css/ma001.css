@@ -9,7 +9,7 @@
     padding-left: 10%;
     padding-bottom: 50px;
     font-size: 2rem;
-    height: 100%;
+    height: calc(100vh - 50px);
 }
 
 .fadeIn {
@@ -22,13 +22,13 @@
     background-color: #3d5ba9;
     display: grid;
     align-items: center;
+    height: calc(100vh - 50px);
 }
 
 #title {
     width: 80%;
     font-weight: 900;
     color: #ffffff;
-
     text-align: left;
     padding-left: 10px;
     position: relative;
@@ -67,13 +67,12 @@
     margin-left: 16%;
     width: 70%;
     background-color: #3d5ba9;
-    height: 100%;
+    height: calc(100vh - 50px);
     display: grid;
     align-items: center;
 }
 
 #link {
-    padding-bottom: 20px;
     cursor: -webkit-grab;
     cursor: grab;
 }
@@ -105,7 +104,7 @@
         padding: 0;
         padding-left: 0;
         width: 70%;
-        left: -6.5px;
+        left: -8.5px;
     }
 
     .part2 {
@@ -119,8 +118,6 @@
         margin-top: 0;
         grid-column: 2;
         margin-right: 10px;
-
-
     }
 
     #content {
@@ -128,17 +125,16 @@
         text-align: left;
         color: #ffffff;
         margin-top: 0;
-        padding-left: 10px;
+        padding-left: 20px;
         font-family: 'NanumSquare';
         grid-column: 1;
         grid-row: 1;
         letter-spacing: -2px;
-
     }
 
     #content>p {
         margin-top: 0;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     #page3 {
@@ -168,9 +164,8 @@
     }
 
     .bgi2 {
-
         position: fixed;
-        left: 21vw;
+        left: 20vw;
     }
 
     .bgi2>img {
