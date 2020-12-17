@@ -13,6 +13,7 @@ export default {
     wHeight: window.innerHeight,
   }),
   mounted() {
+    this.forReload()
     let temp111 = window.innerWidth;
     if (temp111 < 768) {
       this.wHeight = this.wHeight - 49.5 + "px";
@@ -52,5 +53,17 @@ export default {
     close(value) {
       this.drawer = value;
     },
+    forReload(){
+      // window.addEventListener('resize',this.reload)
+    },
+    reload(){
+
+      let tempHeight = window.innerHeight;
+      console.log(tempHeight)
+      console.log(this.wHeight)
+      if(this.wHeight != tempHeight){
+        // location.reload()
+      }
+    }
   },
 };

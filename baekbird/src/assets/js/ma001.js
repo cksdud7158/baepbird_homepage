@@ -24,6 +24,7 @@ export default {
     };
   },
   mounted() {
+
     let iWidth = window.innerWidth;
     if (iWidth > 1024) {
       this.widthCheck = true;
@@ -42,5 +43,6 @@ export default {
     toAbout() {
       this.$router.push("/about");
     },
+    
   },
 };

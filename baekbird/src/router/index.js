@@ -44,6 +44,11 @@ const routes = [
     name: "tequ001tst",
     component: () => import("@/views/qu001_test.vue"),
   },
+  {
+    path: "/work",
+    name: "work",
+    component: () => import("@/views/work.vue"),
+  },
 ];
 
 const router = new VueRouter({
