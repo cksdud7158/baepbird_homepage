@@ -1,6 +1,7 @@
 #page1 {
     text-align: center;
     font-family: 'NanumSquare';
+    height: calc(100vh - 50px);
 }
 
 .part1>p:nth-child(1) {
@@ -58,10 +59,6 @@
     display: none;
 }
 
-.page-2 {
-    background-color: #3d5ba9;
-
-}
 
 @media screen and (min-width: 961px) {
     #page1 {
@@ -118,16 +115,6 @@
         justify-items: center;
     }
 
-    .page-2 {
-        background-color: white;
-    }
-
-    #page_2_content {
-        background-color: #3d5ba9;
-        height: 100vh;
-        width: 100vw;
-        margin-top: 120px;
-    }
 }
 
 @media screen and (min-width: 961px)and (max-width: 1024px) {

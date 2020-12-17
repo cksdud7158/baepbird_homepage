@@ -9,7 +9,7 @@
     padding-left: 10%;
     padding-bottom: 50px;
     font-size: 2rem;
-    height: 100%;
+    height: calc(100vh - 50px);
 }
 
 .fadeIn {
@@ -22,6 +22,7 @@
     background-color: #3d5ba9;
     display: grid;
     align-items: center;
+    height: calc(100vh - 50px);
 }
 
 #title {
@@ -66,7 +67,7 @@
     margin-left: 16%;
     width: 70%;
     background-color: #3d5ba9;
-    height: 100%;
+    height: calc(100vh - 50px);
     display: grid;
     align-items: center;
 }

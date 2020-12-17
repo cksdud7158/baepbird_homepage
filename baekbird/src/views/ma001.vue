@@ -41,7 +41,7 @@
           <div class="part3_2">
             <div id="about">
               <p id="link" @click.prevent="$router.push('/work')">
-                work +
+                WORK +
               </p>
             </div>
             <div id="content">
