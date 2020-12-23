@@ -20,10 +20,7 @@
         </div>
         <div class="content">
           <p>Address</p>
-          <p>
-            서울특별시 송파구 양재대로 932, <br />
-            SFSC 328호
-          </p>
+          <p>서울특별시 강동구 천호대로 1139, 9층 <br /></p>
         </div>
       </div>
       <div class="part4">

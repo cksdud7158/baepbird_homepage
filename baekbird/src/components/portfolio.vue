@@ -8,7 +8,9 @@
     </div>
     <div class="part2_content">
       <swiper class="swiper" :options="swiperOption">
-        <swiper-slide></swiper-slide>
+        <swiper-slide v-for="(company, i) in companys" :key="i">
+          <po004 :companys="companys"
+        /></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
@@ -18,11 +20,13 @@
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
+import po004 from "@/components/po004.vue";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
+    po004,
   },
   data() {
     return {
@@ -44,6 +48,8 @@ export default {
           prevEl: ".swiper-button-prev",
         },
       },
+
+      companys: 5,
     };
   },
   beforeMount() {
@@ -120,21 +126,6 @@ export default {
   height: 15vh;
   text-align: center;
   font-size: 18px;
-  /* background-color: white; */
-
-  /* Center slide text vertically
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; */
 }
 
 @media screen and (min-width: 961px) {

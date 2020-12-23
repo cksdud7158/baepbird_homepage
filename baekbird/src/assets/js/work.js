@@ -34,13 +34,15 @@ export default {
         slidesPerColumn: 1,
         loop:true,
         spaceBetween:	1000,
+        grabCursor:true,
+        speed:1000,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        // autoplay: {
-        //   delay: 4000,
-        // },
+        autoplay: {
+          delay: 4000,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -48,4 +50,5 @@ export default {
       },
     };
   },
+
 };

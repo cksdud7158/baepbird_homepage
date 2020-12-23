@@ -1,19 +1,22 @@
 import menubar from "@/components/menubar.vue";
 import in001 from "@/views/in001.vue";
+import preDownImage from "@/components/preDownImage.vue";
 
 export default {
   components: {
     menubar,
     in001,
+    preDownImage,
   },
   data: () => ({
     drawer: false,
     dayFirstVisit: false,
     in001Show: true,
     wHeight: window.innerHeight,
+    nowOuterHeight: window.outerHeight,
   }),
   mounted() {
-    this.forReload()
+    this.forReload();
     let temp111 = window.innerWidth;
     if (temp111 < 768) {
       this.wHeight = this.wHeight - 49.5 + "px";
@@ -34,7 +37,7 @@ export default {
       setTimeout(() => {
         this.dayFirstVisit = true;
         this.in001Show = false;
-      }, 5500);
+      }, 4000);
     }
   },
   methods: {
@@ -53,17 +56,16 @@ export default {
     close(value) {
       this.drawer = value;
     },
-    forReload(){
-      // window.addEventListener('resize',this.reload)
+    forReload() {
+      window.addEventListener("resize", this.reload);
     },
-    reload(){
-
-      let tempHeight = window.innerHeight;
-      console.log(tempHeight)
-      console.log(this.wHeight)
-      if(this.wHeight != tempHeight){
-        // location.reload()
+    reload() {
+      let tempHeight = window.outerHeight;
+      // console.log(tempHeight)
+      // console.log(this.nowOuterHeight)
+      if (this.nowOuterHeight != tempHeight) {
+        location.reload();
       }
-    }
+    },
   },
 };

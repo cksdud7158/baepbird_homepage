@@ -1,34 +1,40 @@
 @font-face {
-    font-family: 'NanumSquare';
-    font-style: normal;
-    font-weight: 100;
-    src: url('../font/NanumSquareRegular.eot'); /* IE9 Compat Modes */
-    src: url('../font/NanumSquareRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/NanumSquareRegular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/NanumSquareRegular.woff') format('woff'), /* Modern Browsers */
-         url('../font/NanumSquareRegular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../font/NanumSquareRegular.otf') format('opentype') 
+  font-family: "Jalnan";
+  src: url("../font/Jalnan.eot"); /* IE9 Compat Modes */
+  src: url("../font/Jalnan.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/Jalnan.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/Jalnan.woff") format("woff"),
+    /* Modern Browsers */ url("../font/Jalnan.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../font/Jalnan.otf") format("opentype");
+}
 
-  }
-  @font-face {
-    font-family: 'Jalnan';
-    font-style: normal;
-    font-weight: 100;
-    src: url('../font/Jalnan.eot'); /* IE9 Compat Modes */
-    src: url('../font/Jalnan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/Jalnan.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/Jalnan.woff') format('woff'), /* Modern Browsers */
-         url('../font/Jalnan.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../font/Jalnan.otf') format('opentype') 
-  }
-  @font-face {
-     font-family: 'NanumSquareExtraBold';
-     font-style: extraBold;
-     font-weight: 100;
-     src: url('../font/NanumSquareExtraBold.eot'); /* IE9 Compat Modes */
-     src: url('../font/NanumSquareExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('../font/NanumSquareExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
-          url('../font/NanumSquareExtraBold.woff') format('woff'), /* Modern Browsers */
-          url('../font/NanumSquareExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
-          url('../font/NanumSquareExtraBold.otf') format('opentype') 
-   }
+@font-face {
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/NanumSquareRegular.eot"); /* IE9 Compat Modes */
+  src: url("../font/NanumSquareRegular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/NanumSquareRegular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/NanumSquareRegular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../font/NanumSquareRegular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../font/NanumSquareRegular.otf")
+      format("opentype");
+}
+
+@font-face {
+  font-family: "NanumSquareExtraBold";
+  font-style: extraBold;
+  font-weight: 100;
+  src: url("../font/NanumSquareExtraBold.eot"); /* IE9 Compat Modes */
+  src: url("../font/NanumSquareExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/NanumSquareExtraBold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/NanumSquareExtraBold.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../font/NanumSquareExtraBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../font/NanumSquareExtraBold.otf")
+      format("opentype");
+}

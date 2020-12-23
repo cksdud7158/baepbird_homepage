@@ -1,7 +1,11 @@
 <template>
-  <v-app id="text">
-    <v-main> </v-main>
-  </v-app>
+  <div id="page">
+    <div>
+      <span id="text1"></span><br />
+      <span id="text2"></span>
+      <span id="text3"></span>
+    </div>
+  </div>
 </template>
 
 <style scoped src="@/assets/css/remove_css.css"></style>

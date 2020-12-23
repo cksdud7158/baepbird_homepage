@@ -13,6 +13,7 @@
               hide-details
               v-model="name"
               solo
+              flat
             ></v-text-field>
           </div>
         </div>
@@ -22,6 +23,7 @@
             <v-text-field
               solo
               dense
+              flat
               class="white"
               hide-details
               v-model="contactNum"
@@ -37,6 +39,7 @@
               class="white"
               hide-details
               v-model="email"
+              flat
             ></v-text-field>
           </div>
         </div>
@@ -49,11 +52,12 @@
               v-model="content"
               hide-details
               solo
+              flat
             ></v-textarea>
           </div>
         </div>
         <div class="item" v-show="!widthCheck">
-          <p>내 용</p>
+          <p class="test">내 용</p>
           <div class="part11">
             <v-textarea
               background-color="white"
@@ -61,6 +65,7 @@
               v-model="content"
               hide-details
               solo
+              flat
             ></v-textarea>
           </div>
         </div>
