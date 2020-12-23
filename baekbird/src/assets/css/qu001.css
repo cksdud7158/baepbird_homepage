@@ -1,223 +1,225 @@
 .qu001 {
-    background-color: #3d5ba9;
+  background-color: #3d5ba9;
 
-    color: white;
-    font-family: "NanumSquare";
-    font-weight: 600;
-    padding: 0 7%;
+  color: white;
+  font-family: "NanumSquare";
+  font-weight: 600;
+  padding: 0 7%;
 }
 
 .name {
-    padding-top: 5vh;
-    text-align: center;
-    font-family: "Jalnan";
+  padding-top: 5vh;
+  text-align: center;
+  font-family: "Jalnan";
 }
 
 .contact {
-    text-align: center;
-    font-family: "Jalnan";
-    font-size: 1.9rem;
+  text-align: center;
+  font-family: "Jalnan";
+  font-size: 1.9rem;
 }
 
 .part1 {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.item>p {
-    margin-bottom: 10px;
-    font-size: 0.8rem;
+.item > p {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
 }
 
-.item:nth-child(1)>p,
-.item:nth-child(5)>p {
-    letter-spacing: 6px;
+.item:nth-child(1) > p,
+.item:nth-child(5) > p {
+  letter-spacing: 6px;
 }
 
 .part3 {
-    display: flex;
-    align-items: center;
-    font-size: .6rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
 }
 
-.part3>span {
-    margin-left: 10px;
+.part3 > span {
+  margin-left: 10px;
 }
 
 .ask {
-    margin-top: 20px;
-    display: grid;
-    justify-items: center;
+  margin-top: 20px;
+  display: grid;
+  justify-items: center;
 }
 
-.ask>img {
-    width: 50vw;
-    cursor: -webkit-grab;
-    cursor: grab;
+.ask > img {
+  width: 50vw;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .last {
-    text-align: center;
-    margin-top: 10px;
-    font-size: .6rem;
-    cursor: -webkit-grab;
-    cursor: grab;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.6rem;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .part11 {
-    background-color: #fff;
-    border-radius: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 961px) {
-    .qu001 {
-        margin-top: 120px !important;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        height: calc(100vh - 120px) !important;
-    }
+  .qu001 {
+    margin-top: 120px !important;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: calc(100vh - 120px) !important;
+  }
 
-    .name {
-        margin-top: 0;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        padding-top: 0;
-    }
+  .name {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
 
-    .part1 {
-        margin-top: 30px;
-    }
+  .part1 {
+    margin-top: 30px;
+  }
 
-    .contact {
-        font-size: 3rem;
-    }
+  .contact {
+    font-size: 3rem;
+  }
 
-    .ask>img {
-        width: 15vw;
-    }
+  .ask > img {
+    width: 15vw;
+  }
 
-    .item {
-        width: 40vw;
-        display: grid;
-        grid-template-columns: 80px 1fr;
-        align-items: center;
-        margin-bottom: 3vh;
-        margin-right: 80px;
-    }
+  .item {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    margin-bottom: 3vh;
+    margin-right: 80px;
+  }
 
-    .item:nth-child(5) {
-        margin-bottom: 10px;
-    }
+  .item:nth-child(5) {
+    margin-bottom: 10px;
+  }
 
-    .item:nth-child(4),
-    .item:nth-child(5) {
-        align-items: start;
-    }
+  .item:nth-child(4),
+  .item:nth-child(5) {
+    align-items: start;
+  }
 
-    .item>p {
-        font-size: 1.3rem;
-        margin-bottom: 0;
-    }
+  .item > p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
 
-    .part3 {
-        margin-left: 80px;
-        font-size: 1rem;
-    }
+  .part3 {
+    margin-left: 80px;
+    font-size: 1rem;
+  }
 
-    .last {
-        font-size: .9rem;
-    }
+  .last {
+    font-size: 0.9rem;
+  }
+  .test {
+    padding-top: 5px;
+  }
 }
 
-@media screen and (min-width: 961px)and (max-width: 1024px) {
-    .qu001 {
-        height: calc(100vh - 120px) !important;
-    }
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+  .qu001 {
+    height: calc(100vh - 120px) !important;
+  }
 
-    .name {
-        margin-top: 0;
-        font-size: 1rem;
-        margin-bottom: 10px;
-        padding-top: 0;
-    }
+  .name {
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
 
-    .part1 {
-        margin-top: 5vh;
-    }
+  .part1 {
+    margin-top: 5vh;
+  }
 
-    .contact {
-        font-size: 2.5rem;
-    }
+  .contact {
+    font-size: 2.5rem;
+  }
 
-    .ask>img {
-        width: 15vw;
-    }
+  .ask > img {
+    width: 15vw;
+  }
 
-    .item {
-        width: 40vw;
-        display: grid;
-        grid-template-columns: 80px 1fr;
-        align-items: center;
-        margin-bottom: 3vh;
-        margin-right: 80px;
-    }
+  .item {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    margin-bottom: 3vh;
+    margin-right: 80px;
+  }
 
-    .item:nth-child(4),
-    .item:nth-child(5) {
-        align-items: start;
-    }
+  .item:nth-child(4),
+  .item:nth-child(5) {
+    align-items: start;
+  }
 
-    .item>p {
-        font-size: 1.3rem;
-        margin-bottom: 0;
-    }
+  .item > p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
 
-    .part3 {
-        margin-left: 80px;
-        font-size: 1rem;
-    }
+  .part3 {
+    margin-left: 80px;
+    font-size: 1rem;
+  }
 
-    .last {
-        font-size: .9rem;
-    }
+  .last {
+    font-size: 0.9rem;
+  }
 }
 
-@media all and (min-width:768px) and (max-width:960px) {
-    .name {
-        font-size: 1.5rem;
-    }
+@media all and (min-width: 768px) and (max-width: 960px) {
+  .name {
+    font-size: 1.5rem;
+  }
 
-    .contact {
-        font-size: 2.5rem;
-    }
+  .contact {
+    font-size: 2.5rem;
+  }
 
-    .qu001 {
-        display: grid;
-        justify-items: center;
-    }
+  .qu001 {
+    display: grid;
+    justify-items: center;
+  }
 
-    .item>p {
-        font-size: 1.2rem;
-    }
+  .item > p {
+    font-size: 1.2rem;
+  }
 
+  .part1 {
+    width: 70vw;
+  }
 
-    .part1 {
-        width: 70vw;
-    }
+  .part3 {
+    font-size: 1rem;
+  }
 
-    .part3 {
-        font-size: 1rem;
-    }
+  .ask {
+    margin-top: 100px;
+  }
 
-    .ask {
-        margin-top: 100px;
-    }
-
-    .last {
-        font-size: .9rem;
-    }
+  .last {
+    font-size: 0.9rem;
+  }
 }

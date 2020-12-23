@@ -1,10 +1,10 @@
 export default {
-  apiKey: "AIzaSyDY8y9chIMdFFmGrI1FDwzG57rnb8eyP9k",
-  authDomain: "baekbirdcompany-43fde.firebaseapp.com",
-  databaseURL: "https://baekbirdcompany-43fde.firebaseio.com",
-  projectId: "baekbirdcompany-43fde",
-  storageBucket: "baekbirdcompany-43fde.appspot.com",
-  messagingSenderId: "1037866734135",
-  appId: "1:1037866734135:web:8ec867b972aff8a597a5b2",
-  measurementId: "G-K63WWFLDSM",
+  apiKey: "AIzaSyAJp8M7Vo7cHy3f6CB3BLiDBqiSqCLM7C0",
+  authDomain: "baepbirdhomepage.firebaseapp.com",
+  databaseURL: "https://baepbirdhomepage-default-rtdb.firebaseio.com",
+  projectId: "baepbirdhomepage",
+  storageBucket: "baepbirdhomepage.appspot.com",
+  messagingSenderId: "1004731133940",
+  appId: "1:1004731133940:web:6dad426085c3c2f23353a1",
+  measurementId: "G-J1K78GGKH8",
 };

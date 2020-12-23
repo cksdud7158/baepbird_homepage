@@ -10,11 +10,8 @@
               <img src="@/assets/img/sam.svg" alt="" id="item" />
             </div>
             <div id="part1_22">
-              <p>뱁새공방</p>
-              <div class="part1_23">
-                <p>을 소개합니다</p>
-                <img src="@/assets/img/sam.svg" alt="" id="sam" />
-              </div>
+              <p><span>뱁새공방</span>을 소개합니다</p>
+              <img src="@/assets/img/sam.svg" alt="" id="sam" />
             </div>
           </div>
           <div id="part2">

@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div data-app>
     <p @click.prevent="dialog = true" class="forCursor">이메일무단수집거부</p>
-
     <v-dialog v-model="dialog" fullscreen>
       <div class="forBack">
         <div class="container">
@@ -18,7 +17,7 @@
             </div>
             <img src="@/assets/img/bs001_5.svg" alt="" class="bar" />
           </div>
-          <p class="item">2020년 9월 25일 게시</p>
+          <p class="item">2021년 1월 1일 게시</p>
           <div class="part2">
             <img src="@/assets/img/dot.svg" alt="" class="dot" />
             <p>공고</p>

@@ -4,7 +4,7 @@
       <img src="@/assets/img/menubar_1.svg" alt="" @click.prevent="close" />
     </div>
     <p @click.prevent="$router.push('/about')" class="item">ABOUT</p>
-    <p @click.prevent="$router.push('/planning')" class="item">WORK</p>
+    <p @click.prevent="$router.push('/work')" class="item">WORK</p>
     <p @click.prevent="$router.push('/contact')" class="item">CONTACT</p>
   </div>
 </template>
@@ -32,6 +32,7 @@ img {
   color: white;
   font-family: "NanumSquare";
   font-size: 3rem;
+  font-weight: 600;
   margin-top: 60px;
   cursor: -webkit-grab;
   cursor: grab;
@@ -57,7 +58,7 @@ img {
 }
 @media screen and (min-width: 961px) and (max-width: 1024px) {
   .item {
-    font-size: 1.8rem;
+    font-size: 4rem;
   }
 }
 </style>

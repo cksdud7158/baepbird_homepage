@@ -6,7 +6,7 @@ var serviceAccount = require("./key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://baekbirdcompany-43fde.firebaseio.com",
+  databaseURL: "https://baepbirdhomepage-default-rtdb.firebaseio.com"
 });
 
 const db = admin.database();
@@ -16,7 +16,7 @@ const nodemailer = require("nodemailer");
 
 const smtpServerURL = "smtp.naver.com"; //email SMTP 서버 주소
 const authUser = "cksdud7158@naver.com"; //email 계정 아이디 또는 이메일
-const authPass = "dnacks1!"; //email 계정 비밀번호
+const authPass = "qoqtorhdqkd!1"; //email 계정 비밀번호
 const fromEmail = authUser; //보내는 사람 이메일 주소
 
 exports.sendEmail = functions
@@ -81,3 +81,4 @@ exports.sendEmail = functions
       transporter.close();
     });
   });
+

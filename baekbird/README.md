@@ -43,3 +43,13 @@ https://swiperjs.com/api/#autoplay
 
 ### animation.css
 https://animate.style/
+
+### vue-meta
+https://yamoo9.gitbook.io/vue-a11y-seo/seo
+https://webclub.tistory.com/354
+
+### 사이트맵 관련 정보
+https://www.sitemaps.org/ko/protocol.html#sitemapXMLExample
+
+### 구글 검색엔진 최적화 관련 문서
+https://developers.google.com/search/docs/beginner/get-started?hl=ko

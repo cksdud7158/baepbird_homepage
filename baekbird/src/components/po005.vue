@@ -1,5 +1,5 @@
 <template>
-  <div class="po005">
+  <div class="po005" data-app>
     <p class="last" @click.prevent="dialog = true">개인정보처리방침</p>
     <v-dialog v-model="dialog" fullscreen>
       <div class="forBack">
@@ -17,7 +17,7 @@
             </div>
             <img src="@/assets/img/bs001_5.svg" alt="" class="bar" />
           </div>
-          <p class="item">2020년 9월 25일 게시</p>
+          <p class="item">2021년 1월 1일 게시</p>
           <div class="part2">
             <img src="@/assets/img/dot.svg" alt="" class="dot" />
             <p>목적</p>
