@@ -4,7 +4,7 @@
       <img src="@/assets/img/menubar_1.svg" alt="" @click.prevent="close" />
     </div>
     <p @click.prevent="$router.push('/about')" class="item">ABOUT</p>
-    <p @click.prevent="$router.push('/work')" class="item">WORK</p>
+    <p @click.prevent="$router.push('/service')" class="item">SERVICE</p>
     <p @click.prevent="$router.push('/contact')" class="item">CONTACT</p>
   </div>
 </template>

@@ -1,112 +1,69 @@
 <template>
-  <div>
-    <v-dialog
-      v-model="dialog"
-      transition="dialog-bottom-transition"
-      v-if="windowSize"
-      width="70vw"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <h1 dark v-bind="attrs" v-on="on" id="companyLogo">
-          여기에 이미지 넣을거
-        </h1>
-      </template>
-      <div id="first">
-        <div id="contents">
-          <div>
-            <h1>컨텐츠가 들어감</h1>
-          </div>
-        </div>
-        <div id="forClose">
-          <v-spacer></v-spacer>
-          <v-btn dark @click="dialog = false">
-            I accept
-          </v-btn>
-        </div>
+  <v-dialog v-model="dialog" fullscreen transition="dialog-bottom-transition">
+    <template v-slot:activator="{ on, attrs }">
+      <div v-bind="attrs" v-on="on" class="portfolioCompanyLogo">
+        <img :src="company.logo" alt="" class="companyLogo" />
       </div>
-    </v-dialog>
-    <v-dialog
-      v-model="dialog"
-      fullscreen
-      transition="dialog-bottom-transition"
-      v-if="!windowSize"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <h1 dark v-bind="attrs" v-on="on" id="companyLogo">
-          모바일 버전
-        </h1>
-      </template>
-      <div id="first">
-        <div id="contents">
-          <div>
-            <h1>컨텐츠가 들어감</h1>
-          </div>
+    </template>
+
+    <div class="all">
+      <div id="allDiv">
+        <div class="title">
+          <img :src="company.logo" alt="" />
         </div>
-        <div id="forClose">
-          <v-spacer></v-spacer>
-          <v-btn dark @click="dialog = false">
-            I accept
-          </v-btn>
-        </div>
+        <v-tabs
+          v-model="tab"
+          next-icon="mdi-chevron-right"
+          prev-icon="mdi-chevron-left"
+          show-arrows
+          grow
+          id="tabs"
+        >
+          <v-tabs-slider></v-tabs-slider>
+          <v-tab
+            v-for="(tab, i) in company.tabs"
+            :key="i"
+            :style="{
+              letterSpacing: '-1px',
+              fontWeight: '700',
+            }"
+            id="tabsWord"
+          >
+            {{ tab.tab }}
+          </v-tab>
+        </v-tabs>
+        <v-tabs-items v-model="tab">
+          <v-tab-item v-for="(tab, index) in company.tabs" :key="index">
+            <div class="portfolioContent">
+              <div class="description">
+                <div class="descriptionSpan">
+                  <p>{{ tab.description1 }}</p>
+                  <p>{{ tab.description2 }}</p>
+                </div>
+              </div>
+              <div
+                v-for="(imgUrl, index) in tab.imageList"
+                :key="index"
+                id="imgUrlList"
+              >
+                <img :src="imgUrl" alt="" id="imgUrl" />
+              </div>
+            </div>
+          </v-tab-item>
+        </v-tabs-items>
       </div>
-    </v-dialog>
-  </div>
+      <!-- 닫기 버튼 -->
+      <div id="forClose">
+        <img
+          src="@/assets/img/x_blue.svg"
+          alt=""
+          class="x"
+          @click.prevent="dialog = false"
+        />
+      </div>
+    </div>
+  </v-dialog>
 </template>
 <style scoped src="@/assets/css/remove_css.css"></style>
-
-<script>
-export default {
-  props: ["companys"],
-  data() {
-    return {
-      dialog: false,
-      notifications: false,
-      sound: true,
-      widgets: false,
-      windowSize: false,
-    };
-  },
-  mounted() {
-    this.windowSizeJudge();
-  },
-  methods: {
-    windowSizeJudge() {
-      const windowWidth = window.innerWidth;
-      if (windowWidth > 961) {
-        this.windowSize = true;
-      }
-      return null;
-    },
-  },
-};
-</script>
-
-<style scoped>
-#first {
-  background-color: #fff;
-  height: 100vh;
-  padding-top: 50px;
-}
-#contents {
-  background-color: #fff;
-  height: 90%;
-  overflow: scroll;
-}
-#forClose {
-  height: 10%;
-  background-color: green;
-}
-
-@media screen and (min-width: 961px) {
-  #companyLogo {
-  }
-  #first {
-    height: 70vh;
-    margin: 0 auto;
-    padding-top: 0;
-  }
-  #test {
-    background-color: red;
-  }
-}
-</style>
+<script src="@/assets/js/po004.js"></script>
+<style scoped src="@/assets/css/po004.css"></style>

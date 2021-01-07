@@ -40,8 +40,8 @@
           </div>
           <div class="part3_2">
             <div id="about">
-              <p id="link" @click.prevent="$router.push('/work')">
-                WORK +
+              <p id="link" @click.prevent="$router.push('/service')">
+                SERVICE +
               </p>
             </div>
             <div id="content">
