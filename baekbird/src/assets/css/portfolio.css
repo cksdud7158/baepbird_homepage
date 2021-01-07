@@ -1,0 +1,71 @@
+.about {
+  margin-top: 5vh;
+  text-align: center;
+  color: white;
+  font-family: "NanumSquare";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#part2_1 {
+  text-align: center;
+  color: white;
+  font-family: "Jalnan";
+  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+#part2_1 > img {
+  margin-left: 10vw;
+  width: 10px;
+}
+
+.swiper-container {
+  margin-top: 5vh;
+  height: 70vh;
+  width: 80vw;
+}
+
+.swiper-slide {
+  height: calc(60vh / 3);
+  width: calc(60vh / 3) !important;
+  margin:10px 5px ;
+}
+.part2_content {
+  margin: 0 5vw;
+}
+
+@media screen and (min-width: 961px) {
+
+  .box {
+    display: grid;
+    align-items: center;
+  }
+  .about {
+    padding-top: 5vh;
+    font-size: 1.4rem;
+  }
+  #part2_1 {
+    font-size: 2.4rem;
+  }
+  .swiper-container {
+
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+    height: 65vh;
+  }
+  .swiper-slide {
+    height: calc(65vmin / 3);
+    width: calc(65vmin / 3) !important;
+    margin: 40px 20px ;
+    background-color: #fff
+  }
+
+  #part2_1 > img {
+    margin-left: 13vw;
+    width: 15px;
+  }
+}
