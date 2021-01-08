@@ -68,4 +68,25 @@ export default {
       }
     },
   },
+  metaInfo: {
+    // Children can override the title.
+    title: "뱁새공방",
+    titleTemplate: "%s",
+    // Define meta tags here.
+    meta: [
+      { name: "og:title", content: "뱁새공방" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "og:description",
+        content:
+          "온라인마케팅, 광고대행사, 광고캠페인기획, 디지털마케팅. 고객의 제품 및 서비스를 분석하여 차별성 있는 브랜드개성을 만들어드리는 온라인마케팅대행사입니다.",
+      },
+      {
+        name: "keywords",
+        content:
+          "마케팅 ,광고 ,캠페인 ,유튜브광고 ,기획 ,인스타광고 ,온라인마케팅 ,구글검색 ,SNS마케팅 ,마케팅전략 ,광고대행사 ,디지털마케팅 ,키워드광고 ,바이럴광고 ,컨설팅회사 ,마케팅회사 ,브랜드마케팅",
+      },
+      { name: "Copyright", content: "©2021. 뱁새공방 all right reserved" },
+    ],
+  },
 };

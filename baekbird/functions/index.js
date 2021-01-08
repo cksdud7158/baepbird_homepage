@@ -6,7 +6,7 @@ var serviceAccount = require("./key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://baepbirdhomepage-default-rtdb.firebaseio.com"
+  databaseURL: "https://baepbirdhomepage-default-rtdb.firebaseio.com",
 });
 
 const db = admin.database();
@@ -15,9 +15,9 @@ const fdb = admin.firestore();
 const nodemailer = require("nodemailer");
 
 const smtpServerURL = "smtp.naver.com"; //email SMTP 서버 주소
-const authUser = "cksdud7158@naver.com"; //email 계정 아이디 또는 이메일
-const authPass = "qoqtorhdqkd!1"; //email 계정 비밀번호
-const fromEmail = authUser; //보내는 사람 이메일 주소
+const authUser = "cksdud7158"; //email 계정 아이디 또는 이메일
+const authPass = "XNVVNE1M1SYJ"; //email 계정 비밀번호 ,,, 2단계 인증을 설정하여 앱 비밀번호를 따로 받음
+const fromEmail = authUser + "@naver.com"; //보내는 사람 이메일 주소
 
 exports.sendEmail = functions
   .region("asia-northeast3")
@@ -28,7 +28,6 @@ exports.sendEmail = functions
       .orderBy("time", "desc")
       .limit(2)
       .get();
-
     var items = sn.docs.map((v) => {
       const item = v.data();
       return {
@@ -40,6 +39,8 @@ exports.sendEmail = functions
         time: item.time,
       };
     });
+    console.log("items", items);
+    console.log("작동하고 있습니다 ----------------");
 
     //메일 보내기
     let transporter = nodemailer.createTransport({
@@ -53,7 +54,7 @@ exports.sendEmail = functions
 
     let mailOptions = {
       from: fromEmail, //보내는 사람 주소
-      to: "baekbird.company@gmail.com", //받는 사람 주소
+      to: "ceo@baepbird.com", //받는 사람 주소
       subject: "홈페이지를 통해서 온 문의 메일!!!!!" + items[0].name, //제목
       html:
         "담당자 이름: " +
@@ -81,4 +82,3 @@ exports.sendEmail = functions
       transporter.close();
     });
   });
-

@@ -6,25 +6,25 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://baepbird.com/</loc>
-      <lastmod>2020-12-21</lastmod>
+      <lastmod>2021-01-07</lastmod>
       <changefreq>always</changefreq>
    </url>
 
    <url>
       <loc>https://baepbird.com/about</loc>
-      <lastmod>2020-12-21</lastmod>
+      <lastmod>2021-01-07</lastmod>
       <changefreq>always</changefreq>
    </url>
 
     <url>
       <loc>https://baepbird.com/contact</loc>
-      <lastmod>2020-12-21</lastmod>
+      <lastmod>2021-01-07</lastmod>
       <changefreq>always</changefreq>
    </url>
    
    <url>
-      <loc>https://baepbird.com/work</loc>
-      <lastmod>2020-12-21</lastmod>
+      <loc>https://baepbird.com/service</loc>
+      <lastmod>2021-01-07</lastmod>
       <changefreq>always</changefreq>
    </url>
 
