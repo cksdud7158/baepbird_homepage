@@ -43,6 +43,7 @@ export default {
         this.contactNum = "";
         this.email = "";
         this.content = "";
+        this.checkbox = "";
         alert("문의가 완료되었습니다.");
       }
     },

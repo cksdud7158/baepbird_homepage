@@ -13,11 +13,9 @@ import VueFullpage from "fullpage-vue";
 // firebase
 import "./plugins/firebase";
 
-//vue-meta
-// import Meta from "vue-meta";
+import Meta from "vue-meta";
 
-
-// Vue.use(Meta);
+Vue.use(Meta);
 
 Vue.use(VueFullpage);
 
