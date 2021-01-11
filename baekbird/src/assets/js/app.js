@@ -86,6 +86,8 @@ export default {
         content:
           "마케팅 ,광고 ,캠페인 ,유튜브광고 ,기획 ,인스타광고 ,온라인마케팅 ,구글검색 ,SNS마케팅 ,마케팅전략 ,광고대행사 ,디지털마케팅 ,키워드광고 ,바이럴광고 ,컨설팅회사 ,마케팅회사 ,브랜드마케팅",
       },
+      { name: "author", content: "Park Chanyeong" },
+      { name: "og:image", content: "@/assets/img/favicon.ico" },
       { name: "Copyright", content: "©2021. 뱁새공방 all right reserved" },
     ],
   },
