@@ -23,6 +23,7 @@
 
     <!-- 포트폴리오 -->
     <div v-for="(company, index) in companys" :key="index">
+      <img :src="company.logo" alt="" />
       <div v-for="(tab, index) in company.tabs" :key="index">
         <div v-for="(image, index) in tab.imageList" :key="index">
           <img :src="image" alt="" />

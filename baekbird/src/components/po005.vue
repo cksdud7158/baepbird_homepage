@@ -139,7 +139,10 @@ export default {
   margin-top: 6px;
 }
 .part3 {
-  margin-top: 13vh;
+  position: absolute;
+  bottom: 0;
+  width: 80vw;
+  height: 80px;
   display: flex;
 }
 .x {
@@ -192,8 +195,19 @@ export default {
   .content {
     font-size: 1.4rem;
   }
+  .part3 {
+    position: absolute;
+    bottom: 0;
+    width: 60vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .x {
-    width: 10vw;
+    height: 60px;
+    cursor: -webkit-grab;
+    cursor: grab;
   }
 }
 
@@ -215,9 +229,6 @@ export default {
   .content {
     font-size: 0.9rem;
   }
-  .x {
-    width: 15vw;
-  }
 }
 @media all and (min-width: 768px) and (max-width: 960px) {
   .title {
@@ -233,9 +244,6 @@ export default {
   }
   .content {
     font-size: 1.2rem;
-  }
-  .part3 {
-    margin-top: 100px;
   }
 }
 </style>
