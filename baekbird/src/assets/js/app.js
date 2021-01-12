@@ -75,7 +75,6 @@ export default {
     // Define meta tags here.
     meta: [
       { name: "og:title", content: "뱁새공방" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         name: "og:description",
         content:

@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" fullscreen transition="dialog-bottom-transition">
+  <v-dialog v-model="dialog" fullscreen>
     <template v-slot:activator="{ on, attrs }">
       <div v-bind="attrs" v-on="on" class="portfolioCompanyLogo">
         <img :src="company.logo" alt="" class="companyLogo" />

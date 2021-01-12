@@ -125,7 +125,10 @@ export default {
 }
 
 .part3 {
-  margin-top: 20vh;
+  position: absolute;
+  bottom: 0;
+  width: 80vw;
+  height: 80px;
   display: flex;
 }
 .x {
@@ -180,10 +183,18 @@ export default {
     font-size: 1.4rem;
   }
   .part3 {
-    margin-top: 25vh;
+    position: absolute;
+    bottom: 0;
+    width: 60vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .x {
-    width: 10vw;
+    height: 60px;
+    cursor: -webkit-grab;
+    cursor: grab;
   }
 }
 
